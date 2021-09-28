@@ -16,15 +16,19 @@ def calculate_n(n0: float, total_population) -> float:
 
 
 def calculate_sample_size(total_population: int, confidence_level: float, margin_of_error: float, target_proportion: float) -> int:
-    z_score = get_z_score(confidence_level)
+    z_score = calculate_z_score(confidence_level)
     n0 = calculate_n0(z_score, target_proportion, margin_of_error)
     return ceil(calculate_n(n0, total_population))
 
 
 def main():
+    total_population = int(input('Total population: '))
+    confidence_level = float(input('Confidence level: '))
+    margin_of_error = float(input('Margin of error: '))
+    target_proportion = float(input('Target proportion: '))
 
-    calculate_sample_size(total_population=100000, confidence_level=0.95, margin_of_error=0.05, target_proportion=0.5)
+    print(f'calculated sample = {calculate_sample_size(total_population, confidence_level, margin_of_error, target_proportion)}')
 
-
+    
 if __name__ == '__main__':
     main()
