@@ -1,4 +1,13 @@
+from typing import Any, Union
 from scipy import stats
+
+
+def checker(*args: Any, **kwargs: Any) -> Union[tuple, dict]:
+    if args and kwargs:
+        raise "Not allowed. Either args only or kwargs only."
+    if args:
+        return args
+    return kwargs
 
 
 def calculate_z_score(confidence_level: float) -> float:
