@@ -1,9 +1,8 @@
 from typing import Optional, Any, Union
 from collections import namedtuple
 from abc import ABC, abstractmethod
-from math import ceil
 
-from utils import calculate_z_score, calculate_n0, calculate_n, checker
+from tools import calculate_z_score, calculate_n0, calculate_n, checker
 from core import SampleSizePrompter, SampleSizeParameter, SampleSizeCalculator
 
 
