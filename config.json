@@ -7,7 +7,7 @@
   },
   {
    "optionDest": "filenames",
-   "value": "/Users/d.e.magno/Personal/Projects/sample-size-calculator/src/main.py"
+   "value": "/Users/d.e.magno/Personal/Projects/sample-size-calculator/src/ui.py"
   },
   {
    "optionDest": "onefile",
@@ -15,11 +15,11 @@
   },
   {
    "optionDest": "console",
-   "value": true
+   "value": false
   },
   {
    "optionDest": "name",
-   "value": "sample-size-calculator"
+   "value": "Sample Size Calculator"
   },
   {
    "optionDest": "ascii",
